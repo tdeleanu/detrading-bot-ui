@@ -1,0 +1,122 @@
+/* Custom RainbowKit styles to match t3rn.io theme */
+
+/* Modal backdrop blur */
+[data-rk] [role="dialog"] {
+  backdrop-filter: blur(20px) !important;
+}
+
+/* Modal background */
+[data-rk] [role="dialog"] > div {
+  background: #111117 !important;
+  border: 1px solid rgba(124, 58, 237, 0.3) !important;
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2) !important;
+}
+
+/* Wallet option cards */
+[data-rk] button[data-testid*="wallet-option"] {
+  background: rgba(17, 17, 23, 0.6) !important;
+  border: 1px solid rgba(124, 58, 237, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-rk] button[data-testid*="wallet-option"]:hover {
+  background: rgba(124, 58, 237, 0.1) !important;
+  border-color: #7C3AED !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Connect button in modal */
+[data-rk] button[aria-label*="Connect"] {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%) !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-rk] button[aria-label*="Connect"]:hover {
+  background: linear-gradient(135deg, #A78BFA 0%, #F472B6 100%) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Chain selector */
+[data-rk] button[data-testid="chain-selector"] {
+  background: rgba(124, 58, 237, 0.1) !important;
+  border: 1px solid rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Account modal */
+[data-rk] [data-testid="account-modal"] {
+  background: #111117 !important;
+}
+
+/* Copy address button */
+[data-rk] button[data-testid="copy-address"] {
+  background: rgba(124, 58, 237, 0.1) !important;
+  border: 1px solid rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Disconnect button */
+[data-rk] button[data-testid="disconnect"] {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
+  color: #EF4444 !important;
+}
+
+[data-rk] button[data-testid="disconnect"]:hover {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: #EF4444 !important;
+}
+
+/* QR Code container */
+[data-rk] [data-testid="qr-code"] {
+  background: rgba(17, 17, 23, 0.8) !important;
+  border: 1px solid rgba(124, 58, 237, 0.2) !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+}
+
+/* Mobile wallet buttons */
+[data-rk] [data-testid="mobile-wallet-button"] {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Learn more link */
+[data-rk] a[href*="learn"] {
+  color: #A78BFA !important;
+  text-decoration: none !important;
+}
+
+[data-rk] a[href*="learn"]:hover {
+  color: #EC4899 !important;
+  text-decoration: underline !important;
+}
+
+/* Scrollbar in modal */
+[data-rk] [role="dialog"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-rk] [role="dialog"] ::-webkit-scrollbar-track {
+  background: rgba(124, 58, 237, 0.1);
+}
+
+[data-rk] [role="dialog"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7C3AED, #EC4899);
+  border-radius: 4px;
+}
+
+/* Success/Error states */
+[data-rk] [data-state="success"] {
+  color: #10B981 !important;
+}
+
+[data-rk] [data-state="error"] {
+  color: #EF4444 !important;
+}
+
+/* Loading spinner */
+[data-rk] [role="progressbar"] {
+  border-color: rgba(124, 58, 237, 0.2) !important;
+  border-top-color: #7C3AED !important;
+}

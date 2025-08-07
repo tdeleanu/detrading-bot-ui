@@ -1,0 +1,65 @@
+import { darkTheme, Theme } from '@rainbow-me/rainbowkit';
+
+export const customRainbowTheme: Theme = darkTheme({
+  accentColor: '#7C3AED',
+  accentColorForeground: 'white',
+  borderRadius: 'medium',
+  fontStack: 'system',
+  overlayBlur: 'small',
+});
+
+// Merge with custom styles
+export const t3rnRainbowTheme = {
+  ...customRainbowTheme,
+  colors: {
+    ...customRainbowTheme.colors,
+    accentColor: '#7C3AED',
+    accentColorForeground: '#FFFFFF',
+    actionButtonBorder: 'rgba(124, 58, 237, 0.3)',
+    actionButtonBorderMobile: 'rgba(124, 58, 237, 0.3)',
+    actionButtonSecondaryBackground: 'rgba(124, 58, 237, 0.1)',
+    closeButton: 'rgba(255, 255, 255, 0.6)',
+    closeButtonBackground: 'rgba(17, 17, 23, 0.8)',
+    connectButtonBackground: '#111117',
+    connectButtonBackgroundError: '#FF4444',
+    connectButtonInnerBackground: 'linear-gradient(135deg, #7C3AED 0%, #EC4899 100%)',
+    connectButtonText: '#FFFFFF',
+    connectButtonTextError: '#FFFFFF',
+    connectionIndicator: '#10B981',
+    downloadBottomCardBackground: 'linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(236, 72, 153, 0.1))',
+    downloadTopCardBackground: 'linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(236, 72, 153, 0.2))',
+    error: '#FF4444',
+    generalBorder: 'rgba(124, 58, 237, 0.2)',
+    generalBorderDim: 'rgba(124, 58, 237, 0.1)',
+    menuItemBackground: 'rgba(124, 58, 237, 0.1)',
+    modalBackdrop: 'rgba(0, 0, 0, 0.8)',
+    modalBackground: '#111117',
+    modalBorder: 'rgba(124, 58, 237, 0.3)',
+    modalText: '#FFFFFF',
+    modalTextDim: 'rgba(255, 255, 255, 0.6)',
+    modalTextSecondary: 'rgba(255, 255, 255, 0.6)',
+    profileAction: 'rgba(124, 58, 237, 0.2)',
+    profileActionHover: 'rgba(124, 58, 237, 0.3)',
+    profileForeground: 'rgba(17, 17, 23, 0.9)',
+    selectedOptionBorder: '#7C3AED',
+    standby: '#EC4899',
+  },
+  fonts: {
+    body: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  },
+  radii: {
+    actionButton: '12px',
+    connectButton: '12px',
+    menuButton: '12px',
+    modal: '16px',
+    modalMobile: '16px',
+  },
+  shadows: {
+    connectButton: '0 4px 20px rgba(124, 58, 237, 0.3)',
+    dialog: '0 20px 60px rgba(0, 0, 0, 0.5)',
+    profileDetailsAction: '0 4px 20px rgba(124, 58, 237, 0.2)',
+    selectedOption: '0 4px 20px rgba(124, 58, 237, 0.3)',
+    selectedWallet: '0 4px 20px rgba(124, 58, 237, 0.3)',
+    walletLogo: '0 4px 12px rgba(0, 0, 0, 0.3)',
+  },
+};
